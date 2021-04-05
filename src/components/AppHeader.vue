@@ -16,6 +16,8 @@
 
 <style scoped>
   .header{
+    max-width: 1140px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -1,7 +1,6 @@
 <template>
   <main class="main">
     <h1>{{title}}</h1>
-    <hr>
     <div class="cards-wrapper">
       <app-card-preview 
         v-for="(element, key) in news" 
@@ -61,17 +60,13 @@
 
 
 <style>
-  .main {
-    padding: 26px 16px;
-  }
   h1{
     font-size: 28px;
     color: rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid #f4f4f4;
+    padding-bottom: 8px;
   }
-  hr{
-    color: #E4E4E4;
-    margin-top: 8px;
-  }
+  
   .cards-wrapper{
     display: grid;
     grid-template-columns: repeat(2, 1fr);

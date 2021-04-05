@@ -26,7 +26,14 @@
     padding: 0;
     box-sizing: border-box;
   }
+  body{
+    background: #f4f4f4;
+  }
   .main{
-     min-height: calc(100vh - 96px);
+    background: #fff;
+    max-width: 1140px;
+    min-height: calc(100vh - 96px);
+    padding: 26px 16px;
+    margin: 0 auto;
   }
 </style>
