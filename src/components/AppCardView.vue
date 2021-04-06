@@ -2,7 +2,7 @@
   <div class="item">
     <h2>{{title}}</h2>
     <div class="item__content">
-      <img v-if="image === ''" src="../assets/img/logo.jpg" alt="No image" class="card__img">
+      <img v-if="image === ''" src="../assets/img/logo.jpg" alt="No image" class="item__img">
       <img v-else :src="image" alt="Image" class="item__img">
       <p class="item__text" v-html="text"></p>
     </div>
