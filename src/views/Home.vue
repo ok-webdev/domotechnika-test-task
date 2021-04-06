@@ -100,7 +100,7 @@
   @media screen and (max-width: 1024px) {
     .cards-wrapper {
       grid-template-columns: 1fr; 
-      justify-items: center;
+      justify-items: start;
     }
   }
 </style>

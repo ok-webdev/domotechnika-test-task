@@ -28,12 +28,10 @@
 
 <style scoped>
   .card {
-    max-height: 200px;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     cursor: pointer;
-    overflow-y: hidden;
     text-decoration: none;
   }
   .card__img {
@@ -51,10 +49,12 @@
     color: rgba(0, 0, 0, 0.5);
   }
   .card__title{
+    text-decoration: none;
+  }
+  .card__title h2 {
     font-size: 20px;
     letter-spacing: .15px;
     color: #1D5AB6;
-    text-decoration: none;
     margin-top: 7px;
   }
   .card__tagline{
@@ -66,7 +66,21 @@
   @media screen and (max-width: 1024px) {
     .card {
       width: 80%;
-      max-height: 400px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .card {
+      width: 80%;
+      flex-direction: column;
+    }
+    .card__img {
+      max-width: 150px;
+      max-height: 150px;
+      aspect-ratio: (1, 1);
+    }
+    .card__text {
+      padding: 0;
+      margin-top: 15px;
     }
   }
 </style>
