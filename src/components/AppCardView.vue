@@ -46,4 +46,15 @@
     color: rgba(0, 0, 0, 0.8);
     margin-left: 15px;
   }
+
+  @media screen and (max-width: 768px) {
+    .item__content {
+      width: 95%;
+      flex-direction: column;
+    }
+    .item__text{
+      width: 100%;
+      margin: 20px;
+    }
+  }
 </style>
